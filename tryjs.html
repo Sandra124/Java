@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Event</h1>
+
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="time"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("time").innerHTML = "Hello World!!";
+}
+</script>
+
+
+<p>Click the button to display the time.</p>
+<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+<p id="demo"></p>
+
+<button type= "button" onclick= "myFunction()">submit</button>
+
+<input id="lp">
+<p id="zip"></p>
+<script>
+function myFunction() {
+  var x, text;
+
+  x = document.getElementById("lp").value;
+
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("zip").innerHTML = text;
+  alert(text);
+}
+</script>
+</body>
+</html>
